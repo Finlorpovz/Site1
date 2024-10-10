@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/labs3/stylelab.css">
+    <title>YouTube Макет</title>
+</head>
+<body>
+    <!-- Боковая панель -->
+    <aside class="sidebar">
+        <div class="menu-item">Головна</div>
+        <div class="menu-item">Shorts</div>
+        <div class="menu-item">Підписки</div>
+        <div class="menu-item">Ви</div>
+    </aside>
+
+    <!-- Основной контент -->
+    <div class="content-wrapper">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo">YouTube Logo</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Введите запрос">
+                <button>Search</button>
+            </div>
+        </header>
+
+        <!-- Навигация по категориям -->
+        <nav class="categories">
+            <button>Все</button>
+            <button>Видеоигры</button>
+            <button>Музыка</button>
+            <button>Новости</button>
+            <button>Ситкомы</button>
+            <button>Экшен и приключения</button>
+            <button>Туризм</button>
+            <button>Уход за собой</button>
+        </nav>
+
+        <!-- Основной контент с видео -->
+        <main class="main">
+            <div class="video-grid">
+                <!-- Видеокарточки с iframe для каждого видео -->
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/r0coFw9jUgE" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Контейнер</h3>
+                    <p>Дима Масленников • 10 млн просмотров • 3 года назад</p>
+                </div>
+
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/W9cOQMLFkKI" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Процессор</h3>
+                    <p>Т-1000 • 2.3 млн просмотров • 2 года назад</p>
+                </div>
+
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/XsTqifE8aD4" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Косметика</h3>
+                    <p>Jagermiss • 1.1 млн просмотров • 1 год назад</p>
+                </div>
+
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/PgY6o83F04A" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Каліфонія</h3>
+                    <p>Varlamov • 1.3 млн просмотров • 5 месяцев назад</p>
+                </div>
+
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/ATB-5rlXN-c" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>Гітара</h3>
+                    <p>Magnesid • 1.2 млн просмотров • 7 месяцев назад</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
