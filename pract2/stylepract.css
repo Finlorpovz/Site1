@@ -6,9 +6,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 100vh; /* Висота на всю видиму частину екрана */
+    margin: 0; /* Вимкнення зовнішніх відступів */
     flex-direction: column;
+    overflow: hidden; /* Приховування прокручування */
 }
 
 /* Стиль для плашки з посиланням */
@@ -35,16 +36,14 @@ body {
     text-decoration: underline; /* Підкреслюємо при наведенні */
 }
 
-/* Стиль для форми */
-form {
+/* Стиль для контейнера форми */
+.form-container {
     background-color: #282828;
-    width: 420px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    position: relative;
-    border: 2px solid #444;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 90%; /* Ширина 90% */
+    max-width: 450px; /* Максимальна ширина */
+    padding: 20px; /* Відступи */
+    border-radius: 15px; /* Закруглені кути */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Тінь */
 }
 
 /* Стиль для полів вводу та селекту */
