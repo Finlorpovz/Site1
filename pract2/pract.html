@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторне заняття №1. Основи HTML</title>
+    <!-- Підключення зовнішнього CSS-файлу -->
+    <link rel="stylesheet" href="/pract2/stylepract.css">
+</head>
+<body>
+
+    <!-- Плашка з посиланням на сторінку зі списком лабораторних -->
+    <div class="lab-list-link">
+        <a href="/Site1/index.html" target="_blank">Перейдіть на сторінку зі списком лабораторних</a>
+    </div>
+
+    <!-- Форма реєстрації -->
+    <form action="https://webhook.site/b35283da-b36e-4006-baab-c00c9f58a14b">
+        <fieldset>
+            <legend>Форма реєстрації</legend>
+
+            <!-- Поле для імені користувача -->
+            <label for="username">Ім'я:</label>
+            <input type="text" id="username" name="username" placeholder="Введіть ваше ім'я" required><br><br>
+
+            <!-- Поле для прізвища користувача -->
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" placeholder="Введіть ваше прізвище" required><br><br>
+
+            <!-- Поле для адреси електронної пошти -->
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" placeholder="Введіть вашу електронну пошту" required><br><br>
+
+            <!-- Поле для паролю -->
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введіть пароль" required><br><br>
+
+            <!-- Поле для підтвердження паролю -->
+            <label for="confirm-password">Підтвердження паролю:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Підтвердження паролю" required><br><br>
+
+            <!-- Поле для дати народження -->
+            <label for="dob">Дата народження:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <!-- Поле для вибору статі -->
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender">
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+                <option value="other">Інше</option>
+            </select><br><br>
+
+            <!-- Кнопка для відправки даних -->
+            <input type="submit" value="Відправити">
+        </fieldset>
+    </form>
+
+</body>
+</html>

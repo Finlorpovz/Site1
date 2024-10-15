@@ -1,0 +1,98 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Стиль для плашки з посиланням */
+.lab-list-link {
+    background-color: #ff5722; /* Яскравий помаранчевий фон */
+    color: white;
+    padding: 10px 20px; /* Відступи всередині */
+    border-radius: 8px; /* Закруглені кути */
+    margin-bottom: 20px; /* Відступ знизу */
+    position: absolute;
+    top: 20px; /* Розташування зверху сторінки */
+    right: 20px; /* Розташування з правого боку */
+    font-size: 14px; /* Зменшений розмір шрифту */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь */
+}
+
+.lab-list-link a {
+    color: white; /* Білий текст для посилання */
+    text-decoration: none; /* Прибираємо підкреслення */
+    font-weight: bold;
+}
+
+.lab-list-link a:hover {
+    text-decoration: underline; /* Підкреслюємо при наведенні */
+}
+
+/* Стиль для форми */
+form {
+    background-color: #282828;
+    width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 2px solid #444;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Стиль для полів вводу та селекту */
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #3c3c3c;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Поля при фокусі */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus, select:focus {
+    outline: none;
+    background-color: #555;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Стиль для кнопки відправки */
+input[type="submit"] {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+/* Стиль для підписів */
+label {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* Легенда */
+legend {
+    font-size: 20px;
+    color: #fff;
+    padding: 0 10px;
+}
