@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .planner {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .week-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .week-info span input {
+    margin-left: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .day {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .day h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+  }
+  
