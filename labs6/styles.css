@@ -1,0 +1,42 @@
+body {
+    margin: 10;
+    overflow: hidden;
+    /* Градиент с плавной анимацией */
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #9900cc, #ff3399);
+    background-size: 300% 300%; /* Масштабирование градиента для плавности */
+    animation: backgroundAnimation 2s infinite linear;
+}
+
+/* Анимация для градиента */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.pokeball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('https://img.pokemondb.net/sprites/items/poke-ball.png') no-repeat center center;
+    background-size: contain;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.pokemon {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    animation: fadeInPokemon 1s;
+}
+
+@keyframes fadeInPokemon {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
